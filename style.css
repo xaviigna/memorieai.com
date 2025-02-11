@@ -1,0 +1,120 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #e94560;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #0f3460;
+}
+
+/* AI-themed gradient text */
+.ai-text {
+    background: linear-gradient(90deg, #00b4d8, #48cae4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+    background: linear-gradient(90deg, #f72585, #7209b7);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* AI-themed card */
+.ai-card {
+    background: linear-gradient(45deg, #3a0ca3, #4361ee);
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+/* Navigation */
+nav {
+    background: rgba(15, 52, 96, 0.8);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    color: #e94560;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 25px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #48cae4;
+    border-color: #48cae4;
+}
+
+.nav-links a.get-started {
+    background-image: linear-gradient(90deg, #f72585, #7209b7);
+    background-size: 200% auto;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+}
+
+.nav-links a.get-started:hover {
+    background-position: right center;
+    color: #fff;
+    border: none;
+}
