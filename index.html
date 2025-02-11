@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Your existing head content here -->
+    <link rel="stylesheet" href="./templates/style.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">MemorieAI.com</div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-blue-500 py-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <h1 class="text-2xl text-white font-bold">MemorieAI.com</h1>
+            <a href="#" class="text-white">Get Started</a>
+        </div>
+    </div>
+
+    <div class="container mx-auto mt-8">
+        <div class="max-w-3xl mx-auto bg-white p-8 shadow-lg rounded-md">
+            <h2 class="text-3xl text-gray-800 font-bold mb-4">Preserve Memories with AI</h2>
+            <p class="text-gray-600 mb-6">Connect with your loved ones by uploading audio and video memories. Our AI technology brings them to life.</p>
+            
+            <!-- File Upload Section -->
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" name="audioFile" accept="audio/*" class="mb-4">
+                <button type="button" onclick="uploadFile()" class="block w-full px-4 py-2 text-white bg-blue-500 rounded-md text-center hover:bg-blue-600">Upload Audio</button>
+            </form>
+
+            <!-- Display Uploaded File Details -->
+            <div id="fileDetails" class="mt-4"></div>
+
+        </div>
+    </div>
+
+    <!-- Your existing body content here -->
+
+    <script src="./static/script.js"></script>
+
+
+</body>
+</html>
